@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "addNew";
+}
+@model WebApplication1.Models.Information
+
+<h1>add New item</h1>
+<form asp-action="addNewItem">
+    <label asp-for="Id"></label>
+    <input asp-for="Id" type="text" placeholder="ID"  required>
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" type="text" placeholder="Name" required>
+
+    <label asp-for="Age"></label>
+    <input asp-for="Age" type="number" placeholder="Age"  required>
+
+    <label asp-for="Status"></label>
+    <input  asp-for="Status" type="checkbox" checked="checked" >
+
+    <button type="submit">Add</button>
+</form>
